@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --primary-color: #101010;
+    --secondary-color: hsl(0, 0%, 96%);
+    --terciary-color: #22D4FD;
+    --hover-color: #272727;
+
+    --primary-font: 'Krona One', 'sans-serf';
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigationheader{
+    padding: 2% 0 0 8% ;
+
+}
+.navigationheader__menu{
+    display: flex;
+    gap: 80px;
+}
+.navigationheader__menu__item{
+    font-family: var(--secondary-font);
+    color:var(--terciary-color);
+    font-size: 1.5rem;
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+body{
+    background: linear-gradient(0deg, rgb(25, 8, 41, 1) 0%, rgba(0,0,0,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* background-color: var(--primary-color); */
+    color: var(--secondary-color);
+}
+.presentation{
+    margin:auto;
+    width: 1283px;
+    padding: 8%;
+    gap: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentation__content__title__highlight{
+    color: var(--terciary-color);
+}
+.presentation__content{
+    gap: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.presentation__content__title{
+    font-size: 2.25rem;
+    font-family:var(--primary-font);
+}
+.presentation__content__paragraph{
+    font-size: 1.5rem;
+    font-family: var(--secondary-font);
+}
+.presentation__buttons{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.presentation__buttons__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--terciary-color);
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding:21.5px 0;
+    text-decoration: none;
+}
+.presentation__buttons__link:hover{
+    background-color: var(--hover-color);
+    font-size: 1.625rem;
+}
+.presentation__buttons__title{
+    font-family: var(--primary-font);
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.presentation__image{
+    width: 50%;
+    object-fit: contain;
+}
+footer{
+    display: flex;
+    padding: 24px;
+    height: 32.727px;
+    width: 100vw;
+    background-color: var(--terciary-color);
+    justify-content: center;
+}
+.signature{
+    text-align: center;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1450px){
+    .navigationheader{
+        padding: 10%;
+    }
+    .navigationheader__menu{
+        justify-content: center;
+    }
+    .presentation{
+        width: 80vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .presentation__content{
+    width: 80%;
+    }
+    .presentation__image{
+    width: 80%;
+    }
+}
+
+@media (max-width: 802px)
+{
+    .navigationheader{
+        padding: 10%;
+    }
+    .navigationheader__menu{
+        justify-content: center;
+    }
+    .presentation{
+        width: 90vw;
+        padding: 2%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .presentation__content__title{
+        font-size: 1.75rem;
+    }
+    .presentation__content__paragraph{
+        font-size: 1rem;
+    }
+    .presentation__buttons__link{
+        font-size: 1rem;
+        width: 80%;
+    }
+    .presentation__buttons__link:hover{
+        font-size: 1.125rem;
+    }
+    .presentation__buttons__title{
+        font-size: 1rem;
+    }
+    .signature{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 402px){
+    .navigationheader{
+        padding: 10%;
+    }
+    .navigationheader__menu{
+        justify-content: center;
+    }
+    .presentation{
+        width: 90vw;
+        padding: 2%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .presentation__content__title{
+        font-size: 1.75rem;
+    }
+    .presentation__content__paragraph{
+        font-size: 1rem;
+    }
+    .presentation__buttons__link{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .presentation__buttons__link:hover{
+        font-size: 1.125rem;
+    }
+    .presentation__buttons__title{
+        font-size: 1rem;
+    }
+    .signature{
+        font-size: 1rem;
+    }
+}
